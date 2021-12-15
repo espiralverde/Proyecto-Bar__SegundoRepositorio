@@ -83,6 +83,9 @@ a:focus {
 }
 
 /* CONTACTO*/
+form {
+  height: 70vh;
+}
 form .container {
   width: 40%;
 }
@@ -115,20 +118,54 @@ form .container {
   flex-direction: column;
   margin: 2rem;
 }
+.card {
+  background-color: #2a2e32;
+  border: none;
+}
+.card-body {
+}
+.card img {
+  height: 200px;
+  background-size: cover;
+}
+.card-title,
+.card-text {
+  color: antiquewhite;
+}
+.card-text {
+  font-size: 1.5rem;
+}
 .contenedor-nosotros button {
   font-size: 1.5rem;
   padding: 2rem;
 }
-/* MENU */
+/* LA TIENDA */
+.contenedor-latienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 70vh;
+  justify-content: center;
+  align-content: center;
+}
+
 .boton-pedir a {
-  padding: 1rem 3rem;
+  padding: 1rem 7rem;
   border-radius: 5px;
+  text-align: center;
+  align-items: center;
   background-color: green;
   color: antiquewhite;
 }
 .card-title {
   text-align: center;
 }
+#tarjeta-tienda {
+  margin: auto;
+}
+#tarjeta-tienda .card-text {
+}
+
 /*FOOTER*/
 footer {
   background: #212529;
