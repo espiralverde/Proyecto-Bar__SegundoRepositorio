@@ -166,6 +166,32 @@ form .container {
 #tarjeta-tienda .card-text {
 }
 
+/* FAQ */
+.contenedor-faq {
+  height: 10rem;
+  width: 90%;
+  height: 80vh;
+}
+.contenedor-faq h2 {
+  text-align: center;
+  color: antiquewhite;
+}
+.accordion-flush {
+  margin: 50px;
+}
+.accordion-item {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+.accordion-header h2 {
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+.accordion-body {
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
 /*FOOTER*/
 footer {
   background: #212529;
