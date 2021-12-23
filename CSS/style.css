@@ -1,198 +1,411 @@
-/* Configuración Global*/
+/* VARIABLES */
+/* GLOBAL */
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: "Fredericka the Great", cursive, sans-serif;
-}
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%;
   line-height: 1.5;
-}
+  height: 100%; }
 
 body {
-  background: #2a2e32;
-}
+  font-family: "Fredericka the Great", cursive, sans-serif;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
 h1 {
-  font-size: 2.6rem;
-  color: white;
-}
+  font-size: 5.6rem;
+  color: antiquewhite; }
+
 li,
 button,
 label,
 input,
 p {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
+
 h2 {
-  font-size: 4.8rem;
-}
+  font-size: 4.8rem; }
+
 h3 {
   font-size: 3rem;
-  font-weight: normal;
-}
+  font-weight: normal; }
+
 h4,
 h5 {
-  font-size: 2.8rem;
-}
-
-/* .text-small {
-  font-size: 0.9rem;
-} */
+  font-size: 2.8rem; }
 
 a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-}
+  color: antiquewhite !important;
+  text-decoration: none; }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-}
+/*NAVBAR*/
+.navbarNav__logo .navbarNav__img {
+  width: 150px;
+  height: 40px; }
 
-/* PRINCIPAL */
+.navbarNav .navbarNav__link {
+  font-size: 3rem;
+  margin: 0 3rem; }
+  .navbarNav .navbarNav__link:hover {
+    color: red !important;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1000ms; }
 
-.navbar {
-  background-color: black;
-}
-#socialnetwork {
-  margin: auto;
-  padding: 10px;
-}
-#navbarNav {
-  display: flex;
-  justify-content: space-around;
-}
-#navbarNav .nav-item {
-  margin: 0rem 5rem;
-}
+/* HERO  - MAIN */
+.hero {
+  background-color: black; }
+  .hero .carousel__inner {
+    max-height: 90rem; }
+    .hero .carousel__inner__item__img {
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden; }
+    .hero .carousel__inner .carousel__caption {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute; }
+      .hero .carousel__inner .carousel__caption .carousel__titulo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: 40%;
+        margin: 1rem 20rem;
+        padding: 3rem;
+        background-color: rgba(0, 0, 0, 0.4); }
+        .hero .carousel__inner .carousel__caption .carousel__titulo .carousel__btn {
+          margin: auto;
+          padding: 1rem 5rem;
+          font-size: 2rem; }
 
-.carousel-inner {
-  width: 100%;
-  max-height: 100vh !important;
-}
-#banner_h2 {
-  background-color: rgba(40, 42, 44, 0.9);
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-}
-.carousel-caption {
-  margin-bottom: 25%;
-}
-
-/* CONTACTO*/
-form {
-  height: 70vh;
-}
-form .container {
-  width: 40%;
-}
-.form-label {
-  color: white;
-}
-.titulo_contacto h2 {
-  margin-bottom: 2rem;
-}
-.container button {
-  padding: 1rem 2rem;
-}
-.form-control {
-  background: #212529;
-  border-color: #545454;
-}
-.form-control:focus {
-  background: #212529;
-}
-.container img {
-  max-height: 550px;
-}
-.container h2 {
-  justify-content: center;
-  color: white;
-}
-/* NOSOTROS */
-.contenedor-nosotros {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
-}
-.card {
-  background-color: #2a2e32;
-  border: none;
-}
-.card-body {
-}
-.card img {
-  height: 200px;
-  background-size: cover;
-}
-.card-title,
-.card-text {
+/* lA TIENDA */
+.headerLaTienda {
+  background: #343c44;
+  padding: 1rem;
   color: antiquewhite;
-}
-.card-text {
-  font-size: 1.5rem;
-}
-.contenedor-nosotros button {
-  font-size: 1.5rem;
-  padding: 2rem;
-}
-/* LA TIENDA */
-.contenedor-latienda {
+  text-align: center; }
+  .headerLaTienda__titulo {
+    padding: 1rem; }
+  .headerLaTienda__texto {
+    font-size: 2.5rem; }
+
+.cardLaTienda__contenedor {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
-  height: 70vh;
-  justify-content: center;
-  align-content: center;
-}
+  margin-top: 2rem; }
+  .cardLaTienda__contenedor .cardLaTienda__card {
+    margin: 1rem;
+    height: 50rem;
+    width: 30rem;
+    color: antiquewhite;
+    background-color: #343c44;
+    border-radius: 10px; }
+    .cardLaTienda__contenedor .cardLaTienda__card:hover {
+      background-color: black;
+      cursor: pointer;
+      transform: scale(1.03);
+      transition: all 200ms ease; }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen {
+      height: 20rem;
+      margin-bottom: 15px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px 10px 0 0; }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen--1 {
+      background-image: url(./../Assets/Img/Tienda_img/picada.png); }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen--2 {
+      background-image: url(./../Assets/Img/Tienda_img//deli_1.png); }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen--3 {
+      background-image: url(./../Assets/Img/Tienda_img/empresarial.png); }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__titulo {
+      text-align: center; }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__texto {
+      padding: 10px; }
+    .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__btn {
+      margin-top: 10rem;
+      display: block;
+      text-align: center; }
 
-.boton-pedir a {
-  padding: 1rem 7rem;
-  border-radius: 5px;
-  text-align: center;
+/* CARTA */
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  background-color: green;
-  color: antiquewhite;
-}
-.card-title {
-  text-align: center;
-}
-#tarjeta-tienda {
-  margin: auto;
-}
-#tarjeta-tienda .card-text {
-}
+  background-color: black; }
+  .menu .contenedor-menu {
+    max-width: 100%;
+    margin: 2rem 20rem; }
+    .menu .contenedor-menu .row-menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly; }
+      .menu .contenedor-menu .row-menu .card-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: normal;
+        background: #282a2c;
+        margin: 2rem 4rem;
+        padding: 10px 20px;
+        border-radius: 5px; }
+        .menu .contenedor-menu .row-menu .card-menu:hover {
+          background-color: black;
+          cursor: pointer;
+          transform: scale(1.03);
+          transition: all 1s ease; }
+        .menu .contenedor-menu .row-menu .card-menu img {
+          max-width: 25rem;
+          border-radius: 5px; }
+        .menu .contenedor-menu .row-menu .card-menu h4 {
+          font-size: 2rem;
+          color: antiquewhite;
+          text-transform: uppercase;
+          margin: 10px 0; }
+        .menu .contenedor-menu .row-menu .card-menu p {
+          font-family: sans-serif;
+          color: antiquewhite;
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          text-align: center; }
+        .menu .contenedor-menu .row-menu .card-menu a {
+          display: block;
+          text-align: center; }
 
-/* FAQ */
-.contenedor-faq {
-  height: 10rem;
-  width: 90%;
-  height: 80vh;
-}
-.contenedor-faq h2 {
-  text-align: center;
-  color: antiquewhite;
-}
-.accordion-flush {
-  margin: 50px;
-}
-.accordion-item {
-  font-size: 3rem;
-  font-family: sans-serif;
-}
-.accordion-header h2 {
-  font-size: 4rem;
-  font-family: sans-serif;
-}
-.accordion-body {
-  font-size: 3rem;
-  font-family: sans-serif;
-}
+/* GALERIA */
+.contenedor-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  background-image: linear-gradient(45deg, red, blue); }
+  .contenedor-galeria img {
+    width: 100%; }
+  .contenedor-galeria .columnas {
+    flex: 25%;
+    padding: 5px; }
+    .contenedor-galeria .columnas img {
+      margin-top: 10px; }
+    .contenedor-galeria .columnas p {
+      padding: 8rem 0rem;
+      color: antiquewhite;
+      text-align: center; }
+      .contenedor-galeria .columnas p:hover {
+        background-image: linear-gradient(45deg, blue, red);
+        transform: translate(0%, -20%);
+        font-size: 2.5rem;
+        padding: 3rem;
+        border-radius: 10px;
+        transition-duration: 400ms;
+        transition-timing-function: ease-in-out; }
 
-/*FOOTER*/
+/* CONTACTO */
+.contenedor-form .marco-contacto {
+  border: 5px #343c44 solid;
+  width: 75% !important; }
+  .contenedor-form .marco-contacto .titulo-contacto {
+    color: antiquewhite;
+    text-align: center;
+    padding-bottom: 2rem; }
+  .contenedor-form .marco-contacto .form-control {
+    background: #212529;
+    border-color: #545454;
+    color: white;
+    font-family: sans-serif; }
+    .contenedor-form .marco-contacto .form-control:focus {
+      background: #545454; }
+  .contenedor-form .marco-contacto .form-label {
+    color: antiquewhite; }
+
+/* FOOTER */
 footer {
-  background: #212529;
-}
+  margin-top: auto;
+  background-color: #343c44;
+  text-align: center; }
+  footer .socialnetwork {
+    font-size: 3rem; }
+
+/* MEDIA QUERY */
+@media (max-width: 1232px) {
+  .carousel__caption h2 {
+    margin: 0 1rem;
+    padding: 2rem;
+    font-size: 4rem; } }
+
+@media (max-width: 1050px) {
+  /* LA TIENDA */ }
+
+@media (max-width: 991px) {
+  /* NAVBAR */
+  .navbarNav .navbarNav__link {
+    font-size: 2rem;
+    margin: 0 2rem; }
+  .carousel__caption {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(185, 183, 174, 0.2); }
+    .carousel__caption h2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      top: 40%;
+      margin: 1rem 2rem;
+      padding: 2rem 4rem;
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.4); }
+      .carousel__caption h2 button {
+        margin: 1rem 1rem;
+        padding: 1rem 4rem;
+        font-size: 1rem; }
+  /* FOOTER */
+  .media-footer {
+    text-align: center; } }
+
+@media (max-width: 767px) {
+  /* LA TIENDA */
+  .carousel__caption {
+    display: none; }
+  .cardLaTienda__contenedor {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black; }
+  /* GALERIA */
+  .columnas {
+    flex: 50%; } }
+
+@media (max-width: 575px) {
+  /* lA TIENDA */
+  .latienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%; }
+    .latienda .headerLaTienda {
+      background: #343c44;
+      padding: 1rem;
+      color: antiquewhite;
+      text-align: center; }
+      .latienda .headerLaTienda h3 {
+        padding: 0.5rem; }
+      .latienda .headerLaTienda h4 {
+        display: none; }
+    .latienda .cardLaTienda__contenedor {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 2rem;
+      width: auto; }
+      .latienda .cardLaTienda__contenedor .cardLaTienda__card {
+        color: antiquewhite;
+        height: 20rem;
+        width: 98%;
+        background-color: #343c44;
+        border-radius: 10px;
+        border: none; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card:hover {
+          background-color: black;
+          cursor: pointer;
+          transform: scale(1.03);
+          transition: all 1s ease; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card h4 {
+          font-size: 2.5rem; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card p {
+          display: none; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card h4 {
+          text-align: center; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card p {
+          padding: 10px; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card a {
+          margin-top: 0rem;
+          display: block;
+          text-align: center; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen {
+          height: 8rem;
+          margin-bottom: 15px;
+          background-size: cover;
+          background-position: center;
+          border-radius: 10px 10px 0 0; }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen--1 {
+          background-image: url(./../Assets/Img/Tienda_img/picada.png); }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card .cardLaTienda__imagen--2 {
+          background-image: url(./../Assets/Img/Tienda_img//deli_1.png); }
+        .latienda .cardLaTienda__contenedor .cardLaTienda__card .ccardLaTienda__imagen--3 {
+          background-image: url(./../Assets/Img/Tienda_img/empresarial.png); }
+  /* CARTA */
+  .menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; }
+    .menu .contenedor-menu {
+      max-width: 100%;
+      margin: 2rem 2rem; }
+      .menu .contenedor-menu .row-menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%; }
+        .menu .contenedor-menu .row-menu .card-menu {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          align-self: normal;
+          background: #282a2c;
+          margin: 1rem 1rem;
+          padding: 1rem 1rem;
+          border-radius: 10px; }
+          .menu .contenedor-menu .row-menu .card-menu img {
+            max-width: 10rem;
+            border-radius: 10px; }
+          .menu .contenedor-menu .row-menu .card-menu h4 {
+            font-size: 2rem; }
+          .menu .contenedor-menu .row-menu .card-menu p {
+            font-size: 1rem; }
+          .menu .contenedor-menu .row-menu .card-menu a {
+            text-align: center; }
+  /* GALERIA */
+  .contenedor-galeria img {
+    width: 100%; }
+  .contenedor-galeria .columnas {
+    flex: 50%; }
+    .contenedor-galeria .columnas img {
+      margin-top: 1rem; }
+    .contenedor-galeria .columnas p {
+      padding: 3rem 0rem; }
+      .contenedor-galeria .columnas p:hover {
+        font-size: 2rem;
+        padding: 3rem; }
+  /* FOOTER */
+  footer .media-footer h5 {
+    font-size: 2.5rem; }
+  footer .media-footer a {
+    font-size: 2rem; }
+  footer .media-footer #ubicacion {
+    display: none; }
+  footer .media-footer iframe {
+    display: none; }
+  footer .socialnetwork {
+    font-size: 1.5rem; } }

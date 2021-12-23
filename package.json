@@ -1,0 +1,25 @@
+{
+  "name": "dw-23500-martin_sosa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/espiralverde/DW-23500-Martin_Sosa.git"
+  },
+  "author": "espiralverde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/espiralverde/DW-23500-Martin_Sosa/issues"
+  },
+  "homepage": "https://github.com/espiralverde/DW-23500-Martin_Sosa#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
